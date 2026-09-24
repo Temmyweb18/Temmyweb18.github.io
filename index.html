@@ -4,46 +4,192 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temmyweb18 | Web Developer</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background: #f5f7fa;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #d1d5db;
+        }
+
+        section {
+            max-width: 900px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+
+        .about {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 25px;
+            background: #111827;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            background: #111827;
+            color: #d1d5db;
+            padding: 25px;
+        }
+    </style>
 </head>
 
 <body>
 
     <header>
         <h1>Hi, I'm Temmyweb18 👋</h1>
-        <p>Web Developer | HTML & CSS</p>
+        <p>Web Developer | HTML & CSS | WordPress</p>
     </header>
 
-    <main>
+    <section>
+        <h2>About Me</h2>
+        <p class="about">
+            I'm a beginner web developer who enjoys creating clean,
+            responsive and user-friendly websites. I'm currently building
+            my skills in HTML, CSS, JavaScript and WordPress.
+        </p>
+    </section>
 
-        <section>
-            <h2>About Me</h2>
-            <p>
-                I'm a web developer passionate about creating clean,
-                responsive and user-friendly websites.
-            </p>
-        </section>
+    <section>
+        <h2>My Services</h2>
 
-        <section>
-            <h2>My Skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>WordPress</li>
-                <li>Responsive Web Design</li>
-            </ul>
-        </section>
+        <div class="services">
 
-        <section>
-            <h2>My Projects</h2>
-            <p>My projects will appear here soon.</p>
-        </section>
+            <div class="card">
+                <h3>🌐 Website Development</h3>
+                <p>
+                    Simple and responsive websites for individuals,
+                    businesses and personal brands.
+                </p>
+            </div>
 
-        <section>
-            <h2>Contact Me</h2>
-            <p>Email: your-email@example.com</p>
-        </section>
+            <div class="card">
+                <h3>🎨 Website Design</h3>
+                <p>
+                    Clean and modern website layouts using HTML and CSS.
+                </p>
+            </div>
 
-    </main>
+            <div class="card">
+                <h3>📝 WordPress</h3>
+                <p>
+                    Basic WordPress setup, customization and website updates.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>My Projects</h2>
+
+        <div class="projects">
+
+            <div class="project">
+                <h3>Personal Portfolio</h3>
+                <p>
+                    This website is my personal web development portfolio.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>More Projects Coming Soon</h3>
+                <p>
+                    I'm currently building more websites to showcase my skills.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Let's Work Together</h2>
+        <p>
+            Need a simple website or help with your existing website?
+            Get in touch with me.
+        </p>
+
+        <a href="mailto:akinwoletemiloluwa@gmail.com">
+            Contact Me
+        </a>
+    </section>
+
+    <footer>
+        <p>© 2026 Temmyweb18. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
