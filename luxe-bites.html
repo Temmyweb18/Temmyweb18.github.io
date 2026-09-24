@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Luxe Bites | Restaurant</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fffaf5;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #2b1608;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: #f3dfc1;
+        }
+
+        .hero-content {
+            max-width: 700px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+            color: #2b1608;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #b85c00;
+            color: white;
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 70px 20px;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 40px;
+            color: #2b1608;
+        }
+
+        .about {
+            text-align: center;
+            max-width: 700px;
+            margin: auto;
+            font-size: 18px;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .food {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .food .emoji {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .food h3 {
+            margin-bottom: 8px;
+        }
+
+        .price {
+            color: #b85c00;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .contact {
+            text-align: center;
+            background: #f3dfc1;
+            max-width: none;
+        }
+
+        .contact p {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background: #2b1608;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Luxe Bites 🍽️</div>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Good Food. Great Moments.</h1>
+
+            <p>
+                Delicious meals made with fresh ingredients,
+                served with love.
+            </p>
+
+            <a class="button" href="#menu">View Our Menu</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Luxe Bites</h2>
+
+        <p class="about">
+            Luxe Bites is a modern restaurant created for people
+            who love delicious food and memorable dining experiences.
+            From quick lunches to special dinners, we make every meal special.
+        </p>
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+
+        <div class="menu">
+
+            <div class="food">
+                <div class="emoji">🍔</div>
+                <h3>Luxe Burger</h3>
+                <p>Juicy beef burger with fresh vegetables and our special sauce.</p>
+                <div class="price">₦5,500</div>
+            </div>
+
+            <div class="food">
+                <div class="emoji">🍗</div>
+                <h3>Grilled Chicken</h3>
+                <p>Perfectly grilled chicken served with delicious sides.</p>
+                <div class="price">₦6,500</div>
+            </div>
+
+            <div class="food">
+                <div class="emoji">🍝</div>
+                <h3>Creamy Pasta</h3>
+                <p>Rich and creamy pasta prepared with fresh ingredients.</p>
+                <div class="price">₦5,000</div>
+            </div>
+
+            <div class="food">
+                <div class="emoji">🍕</div>
+                <h3>Classic Pizza</h3>
+                <p>Freshly baked pizza topped with cheese and your favourite toppings.</p>
+                <div class="price">₦7,000</div>
+            </div>
+
+            <div class="food">
+                <div class="emoji">🥤</div>
+                <h3>Fresh Juice</h3>
+                <p>Refreshing fruit juice made from fresh seasonal fruits.</p>
+                <div class="price">₦2,000</div>
+            </div>
+
+            <div class="food">
+                <div class="emoji">🍰</div>
+                <h3>Chocolate Cake</h3>
+                <p>Soft chocolate cake perfect for finishing your meal.</p>
+                <div class="price">₦3,000</div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Visit Luxe Bites</h2>
+
+        <p>
+            Ready for a great meal? Contact us today to make an order
+            or reserve a table.
+        </p>
+
+        <a class="button" href="mailto:luxebites@example.com">
+            Contact Us
+        </a>
+    </section>
+
+    <footer>
+        <p>© 2026 Luxe Bites. Demo website created by Temmyweb18.</p>
+    </footer>
+
+</body>
+</html>
